@@ -6,13 +6,13 @@ public class Main {
     public static void main(String args[]) {
         BST bst = new BST();
 
-        System.out.println("Ingrese los nombres en orden, separados por espacios");
+        System.out.println("Escriba los nombres en orden afabetico y separados por espacios");
         String names = input.nextLine();
         String[] array =names.split(" ");
 
 
         bst.addRoot(array);
-        System.out.println("La profundidad maxima del arbol es: "+ bst.depth());
+        System.out.println("La profundidad del arbol es: "+ bst.depth());
         bst.reverse();
     }
 
